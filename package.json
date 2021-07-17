@@ -9,7 +9,8 @@
         "client": "npm start --prefix client",
         "server": "nodemon server.js",
         "dev": "concurrently \"npm run server\" \"npm run client\" ",
-        "deploy": "npm run build --prefix client && git add . && git commit -m 'some changes' && git push heroku master"
+        "upload:git": "git add . && git commit -m 'some changes' && git push",
+        "deploy": "npm run build --prefix client && npm run upload:git && git push heroku master"
     },
     "keywords": [],
     "author": "",
