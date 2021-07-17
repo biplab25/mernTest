@@ -8,7 +8,8 @@
         "start": "node server.js",
         "client": "npm start --prefix client",
         "server": "nodemon server.js",
-        "dev": "concurrently \"npm run server\" \"npm run client\" "
+        "dev": "concurrently \"npm run server\" \"npm run client\" ",
+        "deploy": "npm run build --prefix client && git add . && git commit -m 'some changes' && git push heroku master"
     },
     "keywords": [],
     "author": "",
