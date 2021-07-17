@@ -1,0 +1,31 @@
+.TaskAdder {
+    background-color: grey;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    input {
+        height: 50px;
+        width: 70%;
+        max-width: 500px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        padding: 0px 20px;
+    }
+
+    button {
+        width: 30%;
+        max-width: 150px;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        height: 50px;
+
+        &:hover {
+            background-color: rgb(199, 199, 199);
+            cursor: pointer;
+        }
+    }
+}
