@@ -13,6 +13,7 @@
         "deploy": "npm run build --prefix client && npm run upload:git && git push heroku master"
     },
     "keywords": [],
+    
     "author": "",
     "license": "ISC",
     "dependencies": {
